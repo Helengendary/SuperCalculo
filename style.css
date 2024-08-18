@@ -1,16 +1,30 @@
 :root {
-    background-color: tomato;
+    background-color: rgb(38, 34, 33);
     color: white;
 }
 
 body {
-    width: 40%;
-    margin-left: 30%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    margin: 0;
+    justify-content: center;
     align-items: center;
-    margin-top: 10%;        
 }
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(169, 25, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 30px;
+    padding: 5px;
+}
+
 button {
     width: 20%;
     margin-top: 3%;
@@ -24,7 +38,11 @@ input {
 }
 
 td button{
-    width: 40px;
+    width: 120px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 .historico button{
@@ -33,9 +51,17 @@ td button{
 }
 
 .cambio {
-    height: 30px;
-    border: 1px solid white;
-    
+    width: 500px;
+    height: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.871);
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .calculo {
@@ -43,18 +69,48 @@ td button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 162, 162);
-    width: 300px;
-    height: 400px;
+    background-color: rgb(208, 208, 208);
+    width: 700px;
+    height: 800px;
     border-radius: 30px;
-    margin-top: 30px;
+    margin-top: 80px;
+    border: 3px solid rgb(169, 25, 0);
 }
 
 button {
     border: none;
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 2px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
+button:hover, .historico button:hover {
+    transition: 0.1s;
 }
 
 h1 {
     margin-bottom: 30px;
+}
+
+.btn-op {
+    background-color: rgb(160, 198, 234);
+}
+
+.btn-c {
+    background-color: rgb(156, 199, 156);
+}
+
+.btn-num:hover, .historico button:hover {
+    background-color: rgb(198, 198, 198);
+}
+
+.btn-op:hover {
+    background-color: rgb(117, 166, 212);
+}
+
+.btn-c:hover {
+    background-color: rgb(103, 157, 103);
 }
