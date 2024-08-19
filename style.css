@@ -1,6 +1,5 @@
 :root {
     background-color: rgb(38, 34, 33);
-    color: white;
 }
 
 body {
@@ -113,4 +112,14 @@ h1 {
 
 .btn-c:hover {
     background-color: rgb(103, 157, 103);
+}
+
+.sistema {
+    display: flex;
+}
+
+
+
+#tabelaHist {
+    width: 80%;
 }
